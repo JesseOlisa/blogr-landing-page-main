@@ -1,0 +1,595 @@
+/*-----------------------GENERAL---------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 16px;
+    overflow-x: hidden;
+    color: hsl(207, 13%, 34%);
+}
+h1, h2, h3, h4, h5 {
+   color: hsl(240, 10%, 16%); 
+}
+ul {
+    list-style-type: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-family: 'Overpass', sans-serif;
+}
+
+/*---------------------------FOR HEADER*----------------------------------*/
+
+div.header {
+    background: url(./images/bg-pattern-intro-desktop.svg) no-repeat 30% 47% / 180%, linear-gradient( to right, hsl(13, 100%, 72%) ,hsl(353, 100%, 62%)) ;
+    min-height: 500px;
+    border-bottom-left-radius: 80px;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+div.header-container {
+   width: 80%;
+   margin: auto;
+}
+
+/*-----------------------FOR NAV BAR------------------------*/
+nav {
+    display: grid;
+    grid-template-columns: 120px 1fr minmax(200px, 220px);
+    padding: 40px 10px;
+}
+
+nav ul {
+    float: right;
+    position: relative;
+    padding: 10px 10px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav ul li .arrow {
+    margin-right: 10px;
+    transition: transform 0.8s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    line-height: 1.5;
+    padding: 8px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color:  hsl(0, 0%, 95%);
+}
+
+nav ul li .arrow{
+    stroke: #fff;
+    opacity: 0.75;
+}
+nav ul li:hover > a {
+    text-decoration: underline;
+    color: hsl(0, 0%, 100%);
+}
+nav ul li:hover > .arrow  {
+    transform: rotate(180deg);
+    stroke: #fff;
+    opacity: 1;
+}
+nav ul li:hover >  {
+    fill: #fff;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 40px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px 0px ;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+nav ul li:hover > ul {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav ul ul li {
+    margin: 0;
+    min-width: 130px;
+    float: none;
+    display: list-item;
+}
+
+nav ul ul li a {
+    color: hsl(207, 13%, 34%);
+    letter-spacing: normal;
+    padding:8px 10px;
+}
+nav ul ul li a:hover {
+    color: hsl(240, 10%, 16%);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+ul.login {
+    display: inline-block;
+    justify-self: flex-end;
+}
+ul.login li a {
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+ul.login li a:hover {
+    text-decoration: none;
+}
+.sign-up {
+    background: hsl(0, 0%, 100%);
+    color: hsl(356, 100%, 66%);
+    font-weight: 600;
+}
+.sign-up:hover {
+    background: hsla(0, 0%, 100%, 0.2);
+}
+
+.ham-container {
+    padding-top: 10px;
+    justify-self: flex-end;
+    display: none;
+}
+
+
+/*------------------------------HEADER CONTENT---------------------*/
+.header-content {
+    text-align: center;
+    margin-top: 50px;
+}
+.header-content h1 {
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-family: 'overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+.header-content p {
+    font-size: 20px;
+}
+.header-content ul {
+    margin-top: 40px;
+}
+.header-content li {
+    display: inline-block;
+}
+.header-content li a {
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+.first-link {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    transition: 0.2s;
+    margin-right: 10px;
+}
+.first-link:hover {
+    background: hsla(0, 0%, 100%, 0.2);
+    color: hsl(0, 0%, 100%);
+}
+.second-link {
+    border: 1px solid hsl(0, 0%, 100%);
+}
+.second-link:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(353, 100%, 62%);
+    transition: 0.2s;
+}
+.mobile-navbar {
+    display: none;
+}
+
+/*-------------------------------FOR SECTION ONE---------------------*/
+.section-1 {
+    width: 100%;
+    min-height: 50rem;
+    overflow: hidden;
+    background-image: url(./images/illustration-editor-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center right -160px;
+    background-size: 58%;
+    font-family: 'Overpass', sans-serif;
+}
+
+.section-1 h1 {
+    font-size: 36px;
+    margin: 80px 0px;
+    text-align: center;
+}
+.section-content {
+    width: 40%;
+    padding-left: 100px;  
+}
+.section-content h3 {
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+.section-content p {
+    margin-bottom: 80px;
+    line-height: 1.5;
+}
+
+
+/*--------------------SECTION TWO------------------------*/
+.section-2 {
+    min-height: 34rem;
+    background-image: url(./images/illustration-phones.svg);
+    background-repeat: no-repeat;
+    background-position: center left 150px;
+    background-size: 35%;
+    position: relative;
+    font-family: 'Overpass', sans-serif;
+}
+.section-2 .blue-layer {
+    content: "";
+    position: absolute;
+    width: 100%;
+    min-height: 350px;
+    background: url(./images/bg-pattern-circles.svg) no-repeat top 80% left -50%, linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    z-index: -1;
+    top: 70px;
+    left: 0;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+}
+
+.section-2 .section-content {
+    float: right;
+    padding-top: 180px;
+    padding-left: 0px;
+    padding-right: 50px;
+    margin-right: 60px;
+    color: hsl(0, 0%, 100%);
+}
+.section-2 .section-content h3 {
+    font-size: 34px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+/*----------------------------------SECTION THREE ----------------------------------*/
+.section-3 {
+    width: 100%;
+    min-height: 44rem;
+    overflow: hidden;
+    background-image: url(./images/illustration-laptop-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left -245px center;
+    background-size: 60%;
+    margin-bottom: 5rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+.section-3 .section-content {
+    float: right;
+    margin-top: 100px;
+    margin-right: 70px;
+    padding-right: 40px;
+    padding-left: 0px;
+    font-size: 18px;
+}
+
+/*--------------------------------FOOTER-----------------------------------------*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    background-color: hsl(237, 17%, 21%);
+    color: hsl(0, 0%, 100%);
+    min-height: 24rem;
+    border-top-right-radius: 80px;
+    padding-top: 80px;
+    font-family: 'Ubuntu', sans-serif;
+}
+ 
+.footer img {
+    margin: 0 auto ;
+}
+.links-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.links-container h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+}
+.links-container li {
+    margin-bottom: 14px;
+    font-size: 14px;
+    color: hsl(240, 2%, 79%);
+}
+
+
+
+/*-----------------------------------------MEDIA QURIES--------------------------*/
+/*FOR MAX WIDTH 545PX*/
+
+
+@media screen and (max-width: 545px) {
+
+    nav {
+        grid-template-columns: 1fr 40px;
+    }
+    div.header {
+        background-image: url(./images/bg-pattern-intro-mobile.svg), linear-gradient( to bottom, hsl(13, 100%, 72%), hsl(353, 100%, 62%) 50%);
+        background-size: 92rem;
+        min-height: 40rem;
+    }
+    div.header-container {
+        max-width: 90%;
+    }
+
+    nav.desktop-nav ul, ul.login {
+        display: none ;
+    }
+    .ham-container {
+        position: relative;
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        transform: rotate(180deg) 1s;
+    }
+    .close-btn {
+        position: absolute;
+        right: 0px;
+        display: none;
+        transform: rotate(180deg);
+        animation: rotate 0.5s;
+        
+    }
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(90deg);
+        }
+    }
+    .header-content {
+        margin-top: 70px;
+    }
+    .header-content h1 {
+        font-size: 36px;
+    }
+    .header-content p {
+        margin-top: 40px;
+    }
+    .header-content ul {
+        margin-top: 60px;
+    }
+
+
+    .section-1 {
+        background-image: url(./images/illustration-editor-mobile.svg);
+        background-position: top 200px center;
+        background-size: 22rem;
+        height: auto;
+    }
+
+    .section-content {
+        width: 80%;
+        padding-left: 0px;
+        margin: 22rem auto;
+        text-align: center;
+    }
+    .section-content {
+        margin-bottom: 0px;
+    }
+
+    .section-2 {
+        background-size: 25rem;
+        background-position: top center;
+        height: auto;
+    }
+
+    .section-2 .blue-layer {
+        top: 30%;
+        min-height: 80%;
+        background-position: top 380% center;
+        background-size: 152%;
+    }
+
+    .section-2 .section-content {
+        padding-top: 380px;
+        padding-right: 0px;
+        float: none;
+        margin: 0px auto;
+        top: 500px;
+    }
+
+    .section-3 {
+        background-image: url(./images/illustration-laptop-mobile.svg);
+        background-position: top  center;
+        background-size: 30rem;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    .section-3 .section-content {
+        padding-right: 0px;
+        margin: 380px auto 0px;
+        float: none;
+    }
+    
+    .footer {
+        grid-template-columns: 1fr;
+    }
+    .links-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin: 30px auto;
+    }
+
+    .links-container h4, .links-container li {
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+    /*---------------MOBILE NAV BAR-----------------*/
+    div.mobile-navbar {
+        position: absolute;
+        display: block;
+        top: 90px;
+        left: 5%;
+        width: 90%;
+        min-height: 20rem;
+        background-color: hsl(0, 0%, 100%);
+        margin: 0px auto;
+        border-radius: 10px;
+        display: none;
+    }
+    .mobile-navbar nav {
+        display: block;
+        text-align: center;
+        box-shadow: 10px 10px 20px hsla(207, 13%, 34%, 30%), -10px 0px 20px hsla(207, 13%, 34%, 30%);
+        border-radius: 10px;
+    }
+    .mobile-navbar nav ul {
+        float: none;
+        position: static;
+        
+    }
+
+    .mobile-navbar nav ul:first-child {
+        border-bottom: 1px solid hsl(240, 2%, 79%);
+    }
+    
+    .mobile-navbar nav ul li {
+        display: block;
+        padding: 20px 0px;
+    }
+
+    .mobile-navbar nav ul li a {
+        font-size: 24px;
+        padding: 20px 0px;
+        color: hsl(237, 17%, 21%);
+        font-weight: 500;
+    }
+
+    .mobile-navbar nav ul li a:hover {
+        color: hsl(207, 13%, 34%);
+        text-decoration: none;
+    }
+
+    .mobile-navbar nav ul ul {
+        position: static;
+        visibility: visible;
+        opacity: 1;
+        background-color:  hsla(240, 2%, 79%, 30%);
+        display: none;
+    }
+
+    .mobile-navbar nav ul li:hover > ul {
+        display: block;
+    }
+
+    .mobile-navbar nav ul ul li {
+        padding: 10px 0px;
+    }
+
+    .mobile-navbar nav ul ul li a {
+        font-size: 22px;
+        color: hsl(207, 13%, 34%);
+        font-weight: 500;
+    }
+    
+
+    ul.login-mb {
+        border: none;
+    }
+    .login-mb li a:hover{
+        text-decoration: none;
+    }
+    .login-mb .sign-up {
+        background-image: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%) 50%);
+        padding: 20px 40px;
+        border-radius: 50px;
+        color: hsl(0, 0%, 100%);
+    }
+    .mobile-navbar ul.login {
+        display: block;
+        justify-self: center;
+    }
+}
+
+
+
+
+@media screen and (min-width: 547px) and (max-width: 1086px) {
+    div.header-container {
+        width: 95%;
+     }
+
+    ul.login li a {
+        padding: 10px;
+        border-radius: 20px;
+    }
+    .section-1 {
+        background-size: 34rem;
+    }
+    .section-content {
+        width: 40%;
+        padding-left: 60px;  
+    }
+
+    .section-2 {
+        background-size: 20rem;
+        background-position: center left 10px;
+    }
+
+    .section-2 .section-content {
+        padding-top: 150px;
+        margin-right: 20px;
+    }
+    .section-2 .section-content h3 {
+        font-size: 24px;
+    }
+    .section-2 .section-content p {
+        font-size: 16px;
+    }
+
+    .section-3 {
+        background-size: 38rem;
+    }
+
+    .footer  {
+        grid-template-columns: 180px 1fr;
+    }
+}
+
+@media screen and (max-width:350px) {
+    div.header-container {
+        width: 100%;
+    }
+
+    .header-content li a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+}
