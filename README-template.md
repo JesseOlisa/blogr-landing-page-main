@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/JesseOlisa/blogr-landing-page-main]
+- Solution URL: [https://www.frontendmentor.io/solutions/blogrlandingpagemain-using-css-grids-d9Q7iJ1Sk]
 - Live Site URL: [https://jesseolisa.github.io/blogr-landing-page-main/]
 
 ## My process
