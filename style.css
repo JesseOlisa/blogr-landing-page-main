@@ -34,7 +34,7 @@ p {
 
 div.header {
     background: url(./images/bg-pattern-intro-desktop.svg) no-repeat 30% 47% / 180%, linear-gradient( to right, hsl(13, 100%, 72%) ,hsl(353, 100%, 62%)) ;
-    min-height: 500px;
+    min-height: 34.5rem;
     border-bottom-left-radius: 80px;
     color: hsl(0, 0%, 100%);
     position: relative;
@@ -51,7 +51,7 @@ div.header-container {
 nav {
     display: grid;
     grid-template-columns: 120px 1fr minmax(200px, 220px);
-    padding: 40px 10px;
+    padding: 60px 10px;
 }
 
 nav ul {
@@ -160,7 +160,7 @@ ul.login li a:hover {
     margin-top: 50px;
 }
 .header-content h1 {
-    font-size: 56px;
+    font-size: 54px;
     margin-bottom: 30px;
     font-family: 'overpass', sans-serif;
     color: hsl(0, 0%, 100%);
@@ -178,7 +178,7 @@ ul.login li a:hover {
     padding: 10px 15px;
     border-radius: 20px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
 }
 .first-link {
     background-color: hsl(0, 0%, 100%);
@@ -210,7 +210,7 @@ ul.login li a:hover {
     background-image: url(./images/illustration-editor-desktop.svg);
     background-repeat: no-repeat;
     background-position: center right -160px;
-    background-size: 58%;
+    background-size: 43.75rem;
     font-family: 'Overpass', sans-serif;
 }
 
@@ -239,7 +239,7 @@ ul.login li a:hover {
     background-image: url(./images/illustration-phones.svg);
     background-repeat: no-repeat;
     background-position: center left 150px;
-    background-size: 35%;
+    background-size: 31.25rem;
     position: relative;
     font-family: 'Overpass', sans-serif;
 }
@@ -247,8 +247,8 @@ ul.login li a:hover {
     content: "";
     position: absolute;
     width: 100%;
-    min-height: 350px;
-    background: url(./images/bg-pattern-circles.svg) no-repeat top 80% left -50%, linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    min-height: 380px;
+    background: url(./images/bg-pattern-circles.svg) no-repeat top 80% left -150px, linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     z-index: -1;
     top: 70px;
     left: 0;
@@ -265,7 +265,7 @@ ul.login li a:hover {
     color: hsl(0, 0%, 100%);
 }
 .section-2 .section-content h3 {
-    font-size: 34px;
+    font-size: 2rem;
     color: hsl(0, 0%, 100%);
 }
 
@@ -278,7 +278,7 @@ ul.login li a:hover {
     background-image: url(./images/illustration-laptop-desktop.svg);
     background-repeat: no-repeat;
     background-position: left -245px center;
-    background-size: 60%;
+    background-size: 52rem;
     margin-bottom: 5rem;
     font-family: 'Overpass', sans-serif;
 }
@@ -322,7 +322,9 @@ ul.login li a:hover {
     font-size: 14px;
     color: hsl(240, 2%, 79%);
 }
-
+.links-container li a {
+    text-decoration: none;
+}
 
 
 /*-----------------------------------------MEDIA QURIES--------------------------*/
